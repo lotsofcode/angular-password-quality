@@ -8,7 +8,7 @@ Demo Page: http://projects.tomraithel.de/angular-password-quality/index.html
 
 ### Usage
 
-```javascript
+```html
 <!-- Bind your input field to a model (e.g. myPassword) -->
 <input type="password" ng-model="myPassword" >
 
