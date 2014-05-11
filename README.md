@@ -8,7 +8,7 @@ Demo Page: http://projects.tomraithel.de/angular-password-quality/index.html
 
 ### Usage
 
-```
+```javascript
 <!-- Bind your input field to a model (e.g. myPassword) -->
 <input type="password" ng-model="myPassword" >
 
@@ -43,10 +43,10 @@ Your are free to adjust the inner html in this tag as you wish.
 You can copy the directive from [scripts/directives/password-quality.js](https://github.com/tomraithel/angular-password-quality/blob/master/app/scripts/directives/password-quality.js)
 
 The code to determine the quality value is basically the same that is used in Microsofts password-checker on
-[passwordday.org](https://passwordday.org). They require you at least a 14 character password with at least 1 lower case,
+[passwordday.org](https://passwordday.org). They require you enter a 14 character password with at least 1 lower case,
 1 upper case, 1 numeric and 1 special character to get the best score possible.
 
-However this is just a recommendation - if you think your validation needs better rules, go ahead and adjust the directive as you wish.
+However, this is just a recommendation - if you think your validation needs better rules, go ahead and adjust the directive as you wish.
 
 
 ### License
