@@ -1,0 +1,50 @@
+<div class="header">
+  <h1>angular-password-quality</h1>
+  <h4>An AngularJS Directive to Indicate a Password´s Strength</h4>
+</div>
+
+<div class="jumbotron">
+  <h1>Try it!</h1>
+  <p class="lead">
+    Please enter password
+  </p>
+  <div class="form-group">
+    <input type="password" ng-model="myPassword" class="form-control input-lg" placeholder="Please enter a password">
+  </div>
+
+  <password-quality password="myPassword">
+    <div>
+      <p class="lead">
+        <span class="glyphicon" ng-class="{'glyphicon-star': passwordQuality >= 1, 'glyphicon-star-empty': passwordQuality < 1}"></span>
+        <span class="glyphicon" ng-class="{'glyphicon-star': passwordQuality >= 2, 'glyphicon-star-empty': passwordQuality < 2}"></span>
+        <span class="glyphicon" ng-class="{'glyphicon-star': passwordQuality >= 3, 'glyphicon-star-empty': passwordQuality < 3}"></span>
+        <span class="glyphicon" ng-class="{'glyphicon-star': passwordQuality >= 4, 'glyphicon-star-empty': passwordQuality < 4}"></span>
+      </p>
+      <p class="lead">
+
+        <span ng-show="passwordQuality == 0" class="btn btn-info btn-lg disabled">
+          Not yet rated
+        </span>
+        <span ng-show="passwordQuality == 1" class="btn btn-danger btn-lg disabled">
+          Weak
+        </span>
+        <span ng-show="passwordQuality == 2" class="btn btn-warning btn-lg disabled">
+          Medium
+        </span>
+        <span ng-show="passwordQuality == 3" class="btn btn-success btn-lg disabled">
+          Strong
+        </span>
+        <span ng-show="passwordQuality == 4" class="btn btn-primary btn-lg disabled">
+          Awesome
+        </span>
+      </p>
+    </div>
+  </password-quality>
+</div>
+
+
+
+
+<div class="footer">
+  <a><span class="glyphicon glyphicon-info-sign"></span> View this project on GitHub</a>
+</div>
